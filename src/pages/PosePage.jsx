@@ -27,11 +27,11 @@ const PosePage = () => {
         <div key={pose.id} className={styles.poseCard}>
           <h3>{pose.english_name}</h3>
           <p><em>{pose.sanskrit_name}</em></p>
-    {pose.url_png && (
+{pose.url_png && (
   <img
     src={pose.url_png}
     alt={pose.english_name || "Pose"}
-    className="w-16 h-16 object-cover rounded"
+    className={styles.poseImage}
   />
 )}
 

@@ -2,10 +2,7 @@
   max-width: 700px;
   margin: 2rem auto;
   padding: 1rem 2rem;
-  border: 1px solid #ddd;
   border-radius: 12px;
-  background-color: #fefefe;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -14,10 +11,17 @@ h1 {
   margin-bottom: 1rem;
 }
 
-h3 {
+h2 {
   margin-top: 2rem;
   font-size: 1.25rem;
-  color: #2c3e50;
+  color: aliceblue;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 5rem;
+  color: whitesmoke;
+  font-weight: 900;
 }
 
 p {
@@ -27,11 +31,11 @@ p {
 }
 
 .image {
-  margin-top: 1rem;
-  max-width: 100%;
+  margin-top: .5rem;
+  max-width: 250px;
   height: auto;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid whitesmoke;
 }
 
 select {
@@ -72,4 +76,8 @@ button:hover {
 
 .backLink:hover {
   text-decoration: underline;
+}
+
+.text {
+    color: whitesmoke;
 }

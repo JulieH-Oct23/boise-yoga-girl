@@ -12,9 +12,9 @@ export async function getAllCategories() {
 
 export async function getAllPoses() {
   try {
-    const res = await fetch(`${BASE_URL}/poses`);
+    const res = await fetch(`https://yoga-api-nzy4.onrender.com/v1/poses`);
     if (!res.ok) throw new Error("Failed to fetch poses");
-    return await res.json();
+    return await res.json(); // This includes image URLs
   } catch (err) {
     return { error: err.message };
   }

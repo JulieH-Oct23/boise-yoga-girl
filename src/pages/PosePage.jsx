@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NavigateBackButton from "../components/NavigateBackButton";
 import { getAllPoses } from "../services/YogaApi";
-import styles from "./PosePage.module.css"; // optional for styling
+import styles from "./PosePage.module.css";
 
 const PosePage = () => {
   const [poses, setPoses] = useState([]);
@@ -27,15 +27,13 @@ const PosePage = () => {
         <div key={pose.id} className={styles.poseCard}>
           <h3>{pose.english_name}</h3>
           <p><em>{pose.sanskrit_name}</em></p>
-
-          {/* 👇 Display image */}
-          {pose.url_png && (
-            <img
-              src={pose.url_png}
-              alt={pose.english_name}
-              className={styles.image}
-            />
-          )}
+    {pose.url_png && (
+  <img
+    src={pose.url_png}
+    alt={pose.english_name || "Pose"}
+    className="w-16 h-16 object-cover rounded"
+  />
+)}
 
           <p>{pose.pose_description}</p>
         </div>

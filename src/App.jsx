@@ -6,7 +6,7 @@ function App() {
     <BrowserRouter>
       <div style={styles.container}>
         <header style={styles.header}>
-          <h1 style={styles.title}>🧘‍♀️ Yoga Explorer</h1>
+          <h1 style={styles.title}>🧘 Boise Yoga Girl 🧘 </h1>
         </header>
 
         <main style={styles.main}>
@@ -14,7 +14,7 @@ function App() {
         </main>
 
         <footer style={styles.footer}>
-          <p>&copy; {new Date().getFullYear()} Yoga Explorer</p>
+          <p>&copy; {new Date().getFullYear()} @boiseyogagirl </p>
         </footer>
       </div>
     </BrowserRouter>
@@ -30,9 +30,9 @@ const styles = {
     flexDirection: "column",
   },
   header: {
-    backgroundColor: "#f1f1f1",
+    // backgroundColor: "#f1f1f1",
     padding: "1rem",
-    borderBottom: "1px solid #ccc",
+    // borderBottom: "1px solid #ccc",
   },
   title: {
     margin: 0,
@@ -43,9 +43,9 @@ const styles = {
     padding: "2rem",
   },
   footer: {
-    backgroundColor: "#f1f1f1",
+    // backgroundColor: "#f1f1f1",
     padding: "1rem",
-    borderTop: "1px solid #ccc",
+    // borderTop: "1px solid #ccc",
     fontSize: "0.9rem",
   },
 };

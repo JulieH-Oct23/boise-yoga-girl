@@ -10,20 +10,20 @@
 
 h1 {
   font-size: 2rem;
-  color: #333;
+  color: #2c3e50;
   margin-bottom: 1rem;
 }
 
 h3 {
   margin-top: 2rem;
   font-size: 1.25rem;
-  color: #444;
+  color: #2c3e50;
 }
 
 p {
   font-size: 1rem;
   margin: 0.5rem 0;
-  color: #555;
+  color: #2c3e50;
 }
 
 .image {

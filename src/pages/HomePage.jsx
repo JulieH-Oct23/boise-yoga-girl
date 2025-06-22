@@ -1,5 +1,5 @@
 import NavigateButton from "../components/NavigateButton";
-import styles from "../pages/HomePage.module.css";
+import styles from "./HomePage.module.css";
 
 const HomePage = () => (
   <main className="app-main">

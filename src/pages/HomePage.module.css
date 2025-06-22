@@ -7,8 +7,8 @@
 }
 
 .sectionTitle {
+  font-size: 1.8rem;
   color: var(--color-primary);
-  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -22,27 +22,15 @@
 }
 
 .introSection {
-  background-color: transparent; /* no background */
-  color: var(--color-background); /* #F7F8F9 */
+  background-color: transparent;
+  color: var(--color-background);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
   text-align: center;
 }
 
 .introText {
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: var(--color-primary);
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.sectionTitle {
-  font-size: 1.8rem;
-  color: inherit;
-  margin-bottom: 1rem;
-}
-
-.introText {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: inherit;
 }

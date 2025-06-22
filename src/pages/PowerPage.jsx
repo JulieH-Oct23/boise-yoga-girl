@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavigateButton from "../components/NavigateButton";
-import styles from "../pages/PowerPage.modules.css";
+import styles from "../pages/PowerPage.module.css";
 
 
 const classData = [

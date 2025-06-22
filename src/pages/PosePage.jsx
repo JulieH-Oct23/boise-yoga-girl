@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NavigateBackButton from "../components/NavigateBackButton";
 import { getAllPoses } from "../services/YogaApi";
-import styles from "./posepage.module.css"; // lowercase for consistency
+import styles from "./PosePage.module.css";
 
 const PosePage = () => {
   const [poses, setPoses] = useState([]);

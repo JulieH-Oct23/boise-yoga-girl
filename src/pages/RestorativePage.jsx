@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavigateButton from "../components/NavigateButton";
-import styles from "./restorativepage.module.css";
+import styles from "./RestorativePage.module.css";
 
 const restorativeClasses = [
   {

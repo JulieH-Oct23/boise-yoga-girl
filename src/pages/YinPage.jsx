@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavigateButton from "../components/NavigateButton";
-import styles from "./yinpage.module.css";
+import styles from "./YinPage.module.css";
 
 const yinClasses = [
   {

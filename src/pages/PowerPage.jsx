@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavigateButton from "../components/NavigateButton";
-import styles from "./powerpage.module.css"; // lowercase for consistency
+import styles from "./pages/PowerPage.modules.css";
+
 
 const classData = [
   {

@@ -32,5 +32,12 @@
 .introText {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.sectionTitleWelcome {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  text-align: center;
 }

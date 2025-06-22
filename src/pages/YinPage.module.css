@@ -1,50 +1,56 @@
-.container {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  background-color: #fefefe;
-  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
 .title {
+  color: var(--color-primary);
   font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-p {
-  font-size: 1rem;
-  color: #2c3e50;
-  margin-bottom: 2rem;
+.description {
+  color: var(--color-secondary-text);
+  margin-bottom: var(--spacing);
 }
 
-/* Stack buttons vertically on mobile, row on larger screens */
 .buttonGroup {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
-  align-items: center;
-  margin-bottom: 2rem;
+  justify-content: center;
+  margin-bottom: var(--spacing);
 }
 
-.buttonGroup button {
-  width: 100%;
-  max-width: 300px;
+.selectButton {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Responsive: horizontal layout on larger screens */
-@media (min-width: 600px) {
-  .buttonGroup {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.selectButton:hover,
+.selectButton:focus {
+  background-color: #a94739;
+  outline: none;
+}
 
-  .buttonGroup button {
-    width: auto;
-    min-width: 140px;
-  }
+.classCard {
+  background-color: #ffffff;
+  border: 2px solid var(--color-highlight);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  color: var(--color-primary);
+  text-align: left;
+}
+
+.playlistLink {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.playlistLink:hover,
+.playlistLink:focus {
+  color: #a94739;
 }

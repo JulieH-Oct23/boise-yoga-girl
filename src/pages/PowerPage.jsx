@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavigateButton from "../components/NavigateButton";
-import styles from "./PowerPage.module.css";
+import styles from "./powerpage.module.css"; // lowercase for consistency
 
 const classData = [
   {
@@ -53,11 +53,16 @@ const PowerPage = () => {
     if (!selectedClass) return null;
 
     return (
-      <div className={styles.classCard}>
+      <article className={styles.classCard}>
         <h2>{selectedClass.title}</h2>
         <p><strong>Theme:</strong> {selectedClass.theme}</p>
         <p><strong>Duration:</strong> {selectedClass.duration}</p>
-        <p><strong>Playlist:</strong> <a href={selectedClass.playlist} target="_blank" rel="noopener noreferrer">Listen on Apple Music</a></p>
+        <p>
+          <strong>Playlist:</strong>{" "}
+          <a href={selectedClass.playlist} target="_blank" rel="noopener noreferrer" className={styles.playlistLink}>
+            Listen on Apple Music
+          </a>
+        </p>
         <h4>Sequence:</h4>
         <ul>
           {selectedClass.poses.map((pose, i) => (
@@ -65,24 +70,28 @@ const PowerPage = () => {
           ))}
         </ul>
         <p><em>{selectedClass.closing}</em></p>
-      </div>
+      </article>
     );
   };
 
   return (
-    <div className={styles.container}>
+    <main className="app-main">
       <h1 className={styles.title}>Power Yoga Sequences</h1>
-      <p>Add description of Power Yoga</p>
+      <p className={styles.description}>Add description of Power Yoga</p>
 
       <div className={styles.buttonGroup}>
-        <button onClick={() => setActiveClass("hips")}>Power Sequence #1 – Hips</button>
-        <button onClick={() => setActiveClass("core")}>Power Sequence #2 – Core</button>
+        <button onClick={() => setActiveClass("hips")} className={styles.selectButton}>
+          Power Sequence #1 – Hips
+        </button>
+        <button onClick={() => setActiveClass("core")} className={styles.selectButton}>
+          Power Sequence #2 – Core
+        </button>
       </div>
 
-      <NavigateButton to="/">← Back Home</NavigateButton>
+      <NavigateButton to="/">Back</NavigateButton>
 
       {renderClassContent()}
-    </div>
+    </main>
   );
 };
 

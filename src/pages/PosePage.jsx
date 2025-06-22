@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NavigateBackButton from "../components/NavigateBackButton";
 import { getAllPoses } from "../services/YogaApi";
-import styles from "./PosePage.module.css";
+import styles from "./posepage.module.css"; // lowercase for consistency
 
 const PosePage = () => {
   const [poses, setPoses] = useState([]);
@@ -20,25 +20,26 @@ const PosePage = () => {
   if (!poses.length) return <p>Loading poses...</p>;
 
   return (
-    <div className={styles.container}>
+    <main className="app-main">
       <h1>Yoga Poses</h1>
       <NavigateBackButton />
-      {poses.map((pose) => (
-        <div key={pose.id} className={styles.poseCard}>
-          <h3>{pose.english_name}</h3>
-          <p><em>{pose.sanskrit_name}</em></p>
-{pose.url_png && (
-  <img
-    src={pose.url_png}
-    alt={pose.english_name || "Pose"}
-    className={styles.poseImage}
-  />
-)}
-
-          <p>{pose.pose_description}</p>
-        </div>
-      ))}
-    </div>
+      <div className={styles.poseGrid}>
+        {poses.map((pose) => (
+          <div key={pose.id} className={styles.poseCard}>
+            <h3>{pose.english_name}</h3>
+            <p><em>{pose.sanskrit_name}</em></p>
+            {pose.url_png && (
+              <img
+                src={pose.url_png}
+                alt={pose.english_name || "Pose"}
+                className={styles.poseImage}
+              />
+            )}
+            <p>{pose.pose_description}</p>
+          </div>
+        ))}
+      </div>
+    </main>
   );
 };
 

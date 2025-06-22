@@ -1,13 +1,33 @@
-.class-card {
-  background: #fff;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.yogaClasses {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--spacing);
+  color: var(--color-primary);
 }
 
-.yoga-classes {
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem;
+.classCard {
+  background-color: #fff;
+  border: 2px solid var(--color-highlight);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  box-shadow: 0 2px 5px rgba(34, 47, 85, 0.1);
+  text-align: left;
+}
+
+.classCard h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.playlistLink {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.playlistLink:hover,
+.playlistLink:focus {
+  color: #a94739;
 }

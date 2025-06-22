@@ -1,132 +1,38 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  background-color: #923483;
+  --color-primary: #222F55;
+  --color-accent: #C15648;
+  --color-background: #F7F8F9;
+  --color-secondary-text: #9295AD;
+  --color-highlight: #B8B0DD;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --radius: 12px;
+  --spacing: 2rem;
 }
 
-a {
-  font-weight: 500;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: greenyellow
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  font-family: var(--font-base);
   min-height: 100vh;
 }
 
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h1, h2, h3, p {
+  margin: 0 0 1rem;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: yellowgreen
-  }
-  button {
-    background-color:yellowgreen;
-  }
-} */
-.container {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 1rem 2rem;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  color: #2c3e50;
-}
-
-h3 {
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  color: #2c3e50;
-}
-
-p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  color: whitesmoke;
-}
-
-.image {
-  margin-top: 1rem;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-select {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: #2c3e50;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: #3e576f;
-}
-
-.error {
-  color: red;
-  margin-top: 0.5rem;
-}
-
-.backLink {
-  display: inline-block;
-  margin-top: 2rem;
+a {
+  color: var(--color-accent);
   text-decoration: none;
-  color: #0077cc;
 }
 
-.backLink:hover {
-  text-decoration: underline;
-}
-
-.text {
-    color: whitesmoke;
+button, a {
+  font-family: inherit;
+  cursor: pointer;
 }

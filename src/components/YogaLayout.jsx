@@ -1,25 +1,14 @@
 import NavigateButton from "./NavigateButton";
+import styles from "./YogaLayout.module.css";
 
 const YogaLayout = ({ title, children }) => {
   return (
-    <div style={styles.container}>
-      <h1>{title}</h1>
-      <div style={styles.content}>{children}</div>
+    <div className={styles.container}>
+      <h1 className={styles.title}>{title}</h1>
+      <div className={styles.content}>{children}</div>
       <NavigateButton to="/">← Back Home</NavigateButton>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    maxWidth: "700px",
-    margin: "0 auto",
-    padding: "2rem",
-    textAlign: "left",
-  },
-  content: {
-    marginBottom: "2rem",
-  },
 };
 
 export default YogaLayout;

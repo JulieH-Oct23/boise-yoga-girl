@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #222F55;         /* Deep Navy */
+  --color-accent: #C15648;          /* Warm Clay */
+  --color-background: #F7F8F9;      /* Soft White */
+  --color-secondary: #9295AD;       /* Slate Lavender */
+  --color-highlight: #B8B0DD;       /* Periwinkle */
+
+  --font-base: 'Segoe UI', Tahoma, sans-serif;
+  --radius: 12px;
+  --spacing: 1.5rem;
+}

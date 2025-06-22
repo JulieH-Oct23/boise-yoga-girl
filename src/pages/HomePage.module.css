@@ -1,41 +1,36 @@
 .home {
-  max-width: 600px;
+  max-width: 700px;
   margin: 2rem auto;
   padding: 1rem;
-  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #31365b;
+.section {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
 }
 
-/* Smaller title on very small screens */
-@media (max-width: 400px) {
-  .title {
-    font-size: 2rem;
-  }
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
 }
 
-.subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: #31365b;
-}
-
-/* Make buttons a column on small screens, row on wider */
-.nav {
+.buttonGroup {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
   align-items: center;
-  padding: 0 0.5rem; /* small side padding for narrow screens */
+  width: 100%;
 }
 
-/* Buttons full width on small, fixed width on larger */
 .link {
   background-color: #2c3e50;
   border: none;
@@ -43,42 +38,52 @@
   font-size: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
-  color: #fdfdfd;
+  color: #fff;
   font-weight: 600;
   transition: background-color 0.3s ease;
   width: 100%;
   max-width: 300px;
+  text-align: center;
 }
 
 .link:hover {
   background-color: #3e576f;
 }
 
-.link:focus {
-  outline: 2px solid #d4a90d;
-  outline-offset: 2px;
-}
-
-/* Responsive adjustments */
-@media (min-width: 600px) {
-  .nav {
-    flex-direction: row;
-    gap: 1.5rem;
-    padding: 0;
+@media (max-width: 480px) {
+  .home {
+    padding: 1rem;
   }
-  
+
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+
+  .buttonGroup {
+    gap: 0.75rem;
+  }
+
   .link {
-    width: auto;
-    min-width: 120px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
-p {
-  color: #2c3e50;
-  margin: 0; /* reset margin for better control */
+.reference {
+  background-color: aqua;
 }
 
-/* Extra vertical spacing for the welcome paragraph */
-.home > p {
-  margin-bottom: 2rem;
+.introSection {
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #dce6f1;
+  text-align: center;
+}
+
+.introText {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 0.5rem;
 }

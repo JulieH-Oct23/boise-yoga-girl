@@ -5,11 +5,10 @@ const YinPage = () => (
   <div className={styles.container}>
     <div className={styles.home}>
       <h1>Yin Yoga Sequences</h1>
-      <p>Welcome to the Boise Yoga Girl Yoga Hub</p>
+      <p>Add Description of Yin Yoga</p>
       <div className={styles.buttonGroup}>
-        <NavigateButton to="/posepage">Yin Sequence #1 - Hips</NavigateButton>
-        <NavigateButton to="/powerpage">Yin Sequence #2 - Shoulders</NavigateButton>
-        <NavigateButton to="/restorativepage">Yin Sequence #3 - Focus</NavigateButton>
+        <NavigateButton to="/yinpage/sequence1">Yin Sequence #1 - Hips</NavigateButton>
+        <NavigateButton to="/yinpage/sequence2">Yin Sequence #2 - Shoulders</NavigateButton>
       </div>
       <NavigateButton to="/">← Back Home</NavigateButton>
     </div>

@@ -36,7 +36,7 @@ export default function PoseSequenceBuilder({ poses, onBuild }) {
       </div>
 
       <div className="mb-4">
-        <h3 className="text-lg font-semibold mb-2 text-left">🧘 Sequence Preview</h3>
+        <h3 className="text-lg font-semibold mb-2 text-left">Sequence Preview</h3>
         {selectedPoses.length === 0 && <p className="text-gray-500 text-sm">No poses added yet.</p>}
         <ol className="list-decimal pl-4 space-y-2">
           {selectedPoses.map((pose, index) => (

@@ -1,69 +1,69 @@
-:root {
-  --color-primary: #222F55;
-  --color-accent: #C15648;
-  --color-background: #F7F8F9;
-  --color-secondary-text: #9295AD;
-  --color-highlight: #B8B0DD;
-
-  --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --radius: 12px;
-  --spacing: 2rem;
+.section {
+  background-color: var(--color-highlight); 
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  margin-bottom: var(--spacing);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  font-family: var(--font-base);
-  min-height: 100vh;
-  font-size: 1rem; /* Base font size */
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  font-family: var(--font-base);
+.sectionTitle {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-.app-header {
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.introSection {
+  background-color: transparent;
+  color: var(--color-accent);
   padding: var(--spacing);
-  background-color: var(--color-primary);
+  margin-bottom: var(--spacing);
+  text-align: center;
 }
 
-.app-title {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.app-main {
-  flex: 1;
-  padding: var(--spacing);
-}
-
-.app-footer {
-  padding: 1rem;
-  font-size: 0.9rem;
-  background-color: var(--color-primary);
+.introText {
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: var(--color-background);
 }
 
+.sectionTitleWelcome {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 h1 {
-  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+/* Base font sizes */
+body {
+  font-size: 1rem; /* 16px */
+}
+
+h1 {
+  font-size: 2rem; /* 32px */
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 24px */
 }
 
 p, button {
   font-size: 1rem;
 }
 
+/* Responsive scaling for smaller screens */
 @media (max-width: 480px) {
   body {
     font-size: 1.1rem;

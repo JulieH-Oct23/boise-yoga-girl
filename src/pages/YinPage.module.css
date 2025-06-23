@@ -35,7 +35,7 @@
 }
 
 .classCard {
-  background-color: #ffffff;
+  /* background-color: var(--color-accent); */
   border: 2px solid var(--color-highlight);
   border-radius: var(--radius);
   padding: var(--spacing);

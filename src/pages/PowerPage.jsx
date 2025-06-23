@@ -77,8 +77,23 @@ const PowerPage = () => {
 
   return (
     <main className="app-main">
-      <h1 className={styles.title}>Power Yoga Sequences</h1>
-      <p className={styles.description}>Add description of Power Yoga</p>
+   <h1 className={styles.title}>Power Yoga Sequences</h1>
+<p className={styles.description}>
+  Power Yoga is a dynamic, athletic style of yoga that builds strength, flexibility, and endurance through continuous movement linked with breath. It is rooted in vinyasa flow but emphasizes intensity, challenge, and physical conditioning.
+</p>
+<p className={styles.description}>The Purpose of Power Yoga:</p>
+<p className={styles.description}>
+  1. Build muscular strength and endurance. Power Yoga uses bodyweight resistance and flowing transitions to target major muscle groups and build full-body strength.
+</p>
+<p className={styles.description}>
+  2. Improve cardiovascular health. The steady pace and continuous flow elevate heart rate and improve stamina.
+</p>
+<p className={styles.description}>
+  3. Increase flexibility through movement. Dynamic sequences warm and lengthen muscles, allowing deeper access to poses over time.
+</p>
+<p className={styles.description}>
+  4. Develop focus and mental resilience. The challenge of the practice builds mental toughness, discipline, and presence through breath and movement.
+</p>
 
       <div className={styles.buttonGroup}>
         <button onClick={() => setActiveClass("hips")} className={styles.selectButton}>

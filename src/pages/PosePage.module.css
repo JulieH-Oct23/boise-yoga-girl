@@ -6,7 +6,7 @@
 }
 
 .poseCard {
-  background-color: #ffffff;
+  background-color: var(--color-highlight);
   border: 2px solid var(--color-highlight);
   border-radius: var(--radius);
   padding: 1rem;

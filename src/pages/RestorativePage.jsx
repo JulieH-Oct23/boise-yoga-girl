@@ -71,8 +71,13 @@ const RestorativePage = () => {
 
   return (
     <main className="app-main">
-      <h1 className={styles.title}>Restorative Yoga Sequences</h1>
-      <p className={styles.description}>Add description of Restorative Yoga</p>
+    <h1 className={styles.title}>Restorative Yoga Sequences</h1>
+      <p className={styles.description}>Restorative Yoga is a deeply relaxing, passive style of yoga designed to calm the nervous system and encourage physical and mental recovery. It uses props to fully support the body in restful postures, often held for extended periods with no muscular effort.</p>
+      <p className={styles.description}>The Purpose of Restorative Yoga:</p>
+      <p className={styles.description}>1. Reset the nervous system. Long-held, supported poses activate the parasympathetic system (“rest and digest”) to reduce stress and promote healing.</p>
+      <p className={styles.description}>2. Encourage deep relaxation. With the body fully supported, muscles can release chronic tension and fatigue.</p>
+      <p className={styles.description}>3. Support recovery from illness, injury, or burnout. Gentle, still poses offer a safe space for restoration.</p>
+      <p className={styles.description}>4. Cultivate introspection and stillness. Minimal movement allows time for deep awareness and presence.</p>
 
       <div className={styles.buttonGroup}>
         <button onClick={() => setActiveClass("fullbody")} className={styles.selectButton}>

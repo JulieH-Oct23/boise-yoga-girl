@@ -9,8 +9,7 @@ const NavigateBackButton = () => {
       onClick={() => navigate(-1)}
       className={styles.button}
       aria-label="Go back"
-    >
-      ← Back
+    >Back
     </button>
   );
 };

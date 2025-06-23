@@ -21,7 +21,7 @@ const PosePage = () => {
 
   return (
     <main className="app-main">
-      <h1>Yoga Poses FUK IT UP</h1>
+      <h1>Yoga Poses</h1>
       <NavigateBackButton />
       <div className={styles.poseGrid}>
         {poses.map((pose) => (

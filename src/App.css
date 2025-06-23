@@ -57,7 +57,7 @@
 }
 
 .section {
-  border: 2px solid var(--color-highlight);
+  border: 2px solid var(--color-accent);
   background-color: #ffffff;
   border-radius: var(--radius);
   padding: var(--spacing);
@@ -72,7 +72,7 @@
 }
 
 .introSection {
-  background-color: var(--color-highlight);
+  background-color: var(--color-accent);
   border: 2px solid var(--color-secondary-text);
   color: var(--color-primary);
   padding: var(--spacing);

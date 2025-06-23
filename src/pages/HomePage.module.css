@@ -1,5 +1,5 @@
 .section {
-  background-color: var(--color-highlight); /* #B8B0DD */
+  background-color: var(--color-highlight); 
   border-radius: var(--radius);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
@@ -8,7 +8,7 @@
 
 .sectionTitle {
   font-size: 1.8rem;
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -23,7 +23,7 @@
 
 .introSection {
   background-color: transparent;
-  color: var(--color-background);
+  color: var(--color-accent);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
   text-align: center;

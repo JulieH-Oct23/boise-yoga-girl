@@ -33,6 +33,7 @@ const yinClasses = [
       "Pose 7: Reclined Twist, 3 minutes each side",
       "“Lie on your back. Hug your knees in and let them fall to the right. Open your left arm and gaze to the left. Allow the hips to ring out the residue.",
       "➡️ Switch sides",
+      "",
       "Pose 8: Happy Baby, 3 minutes",
       "Hold the outer edges of your feet or shins. Let your knees move toward your armpits. Gently rock if it feels good.",
       "Pose 9: Savasana, 7-10 minutes",

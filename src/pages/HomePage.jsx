@@ -4,7 +4,6 @@ import styles from "./HomePage.module.css";
 const HomePage = () => (
   <main className="app-main">
     <section className={styles.introSection}>
-      <h2 className={styles.sectionTitleWelcome}>🌟 Welcome 🌟 </h2>
       <p className={styles.introText}>
         This application has been designed to help yoga teachers reference poses, indications, cues, and create sequences where yoga teachers can keep notes, meditations, and playlists all in one location.
       </p>

@@ -6,8 +6,8 @@
 }
 
 .poseCard {
-  background-color: var(--color-highlight);
-  border: 2px solid var(--color-highlight);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-accent);
   border-radius: var(--radius);
   padding: 1rem;
   color: var(--color-primary);
@@ -25,4 +25,8 @@
   max-height: 200px;
   object-fit: contain;
   margin: 1rem 0;
+}
+
+h3 {
+  color: var(--color-accent);
 }

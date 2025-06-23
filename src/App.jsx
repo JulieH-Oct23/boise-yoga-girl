@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <div style={styles.container}>
         <header style={styles.header}>
-          <h1 style={styles.title}>🧘 Boise Yoga Girl 🧘 </h1>
+          <h1 style={styles.title}>🌟🧘 Boise Yoga Girl 🧘 🌟</h1>
         </header>
 
         <main style={styles.main}>

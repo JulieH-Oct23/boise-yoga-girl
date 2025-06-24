@@ -97,10 +97,10 @@ const PowerPage = () => {
 
       <div className={styles.buttonGroup}>
         <button onClick={() => setActiveClass("hips")} className={styles.selectButton}>
-          Power Sequence #1 – Hips
+        Power Yoga Hips Sequence
         </button>
         <button onClick={() => setActiveClass("core")} className={styles.selectButton}>
-          Power Sequence #2 – Core
+        Power Yoga Core Sequence
         </button>
       </div>
 

@@ -49,19 +49,53 @@ const yinClasses = [
     theme: "Softening Effort",
     duration: "60 minutes",
     playlist: "https://music.apple.com/us/album/an-ending-ascent/519983255?i=519983431",
-    poses: [
-      "Melting Heart – 4 min",
-      "Thread the Needle (Right/Left) – 3 min each side",
-      "Broken Wing (Right/Left) – 4 min each side",
-      "Sphinx Pose – 4 min",
-      "Reclined Cactus Arms – 4 min",
-      "Eagle Arms (Reclined) – 3 min each side",
-      "Strap Shoulder Stretch – 5 min",
-      "Supported Fish Pose – 6 min",
-      "Reclined Twist – 3 min each side",
-      "Savasana – 7–10 min"
-    ],
-    closing: "Release the shoulders. Let the weight melt off."
+  poses: [
+  "🔔 Opening: “Welcome to your yin practice. Today, we will be nourishing the upper body and core—areas often tight from posture, emotion, and effort. As you arrive, invite the breath to fill the lungs, soften the belly, and expand the ribs. Feel your body drop into presence. No need to hold, just to be.”",
+  "🔲",
+
+  "🧘 1: Supported Fish, 5 minutes",
+  "Place a bolster or rolled blanket lengthwise under your spine, head supported. Arms rest wide, palms up. This opens the chest, shoulders, and throat. Soften your gaze or close the eyes. Let the breath expand naturally.",
+  "🔲",
+
+  "🧘 2: Melting Heart, 6 minutes",
+  "Come to hands and knees. Walk your hands forward and lower your chest toward the mat, keeping hips over knees. Forehead or chin rests on the mat. This stretches the shoulders, upper back, and spine. Let the heart melt down. Modify: Use props under chest or forehead.",
+  "🔲",
+
+  "🧘 3: Sphinx Pose, 5 minutes",
+  "Lie on your belly. Place your elbows under shoulders, forearms parallel. Open the chest and lift gently through the upper spine. Relax your glutes. This activates the low back and strengthens the core subtly. Modify: Lower to forearms and rest forehead if needed.",
+  "🔲",
+
+  "🧘 4: Seal Pose, 3 minutes",
+  "From Sphinx, straighten your arms (if appropriate) and lift the chest higher. Keep the shoulders soft. Deep belly and spine opening. If it’s too intense, stay in Sphinx. Let the breath open the front body.",
+  "🔲",
+
+  "🧘 5: Thread the Needle, 3 minutes each side",
+  "Come to all fours. Thread your right arm underneath your left and rest your right shoulder and temple on the mat. Left hand presses gently. This releases the shoulder blades and upper back. Breathe between the ribs.",
+  "🔲",
+
+  "🧘 6: Cat Pulling Its Tail, 4 minutes each side",
+  "Lie on your left side. Bend both knees. Reach your right hand back to grab your right foot, gently pulling it toward your glute while twisting the upper body open to the right. Great for quads, chest, and twist for the spine. Modify: Use a strap or skip the foot grab.",
+  "🔲",
+
+  "🧘 7: Reclined Core Twist, 5 minutes each side",
+  "Lie on your back. Extend your arms in a T. Lift your legs to tabletop, then drop both knees to the right. Keep the opposite shoulder grounded. Engage the belly gently. This wrings out the spine and gently activates the core.",
+  "🔲",
+
+  "🧘 8: Banana Pose, 4 minutes each side",
+  "Lie on your back. Shift your hips slightly right, feet and upper body left, creating a crescent moon shape. Cross the ankles and clasp hands overhead if accessible. This side-body stretch targets obliques, shoulders, and intercostals.",
+  "🔲",
+
+  "🧘 9: Reclined Butterfly with Arms Overhead, 5 minutes",
+  "Bring soles of feet together, knees fall wide. Extend arms overhead or cactus them. Let the front body expand. This gently stretches the abdominal wall and chest. Breathe into your belly, ribs, heart.",
+  "🔲",
+
+  "🧘 10: Savasana, 7-10 minutes",
+  "Settle into stillness. Feel the openness of the chest, the softness of the belly, and the ease in your spine. You’ve done enough. Let gravity hold you. Just be. Modify: Cover yourself, use bolsters under knees, or place one hand on heart and one on belly.",
+  "🔲",
+
+  "🔔 Closing: “Begin to welcome sensation back. Wiggle the fingers, stretch your arms overhead. Roll gently to one side and press up slowly. Bring your hands to heart center. Honor the work you’ve done to open, soften, and listen inward. Let this calm radiate outward.”"
+],
+closing: "🔔 Let your breath anchor you. Let your heart stay open. You are held, you are whole."
   }
 ];
 
@@ -111,10 +145,10 @@ const YinPage = () => {
 
       <div className={styles.buttonGroup}>
         <button onClick={() => setActiveClass("hips")} className={styles.selectButton}>
-          Yin Sequence #1 – Hips
+          Yin Hips Sequence
         </button>
         <button onClick={() => setActiveClass("shoulders")} className={styles.selectButton}>
-          Yin Sequence #2 – Shoulders & Upper Body
+          Yin Shoulder Sequence
         </button>
       </div>
 

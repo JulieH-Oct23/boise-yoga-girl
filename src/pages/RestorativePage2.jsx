@@ -2,7 +2,7 @@ import PowerYogaClass from "../components/PowerYogaClass";
 import YogaLayout from "../components/YogaLayout";
 
 const restorativeClass2 = {
-  title: "Restorative Yoga – Shoulders & Neck",
+  title: "Restorative Yoga for Depression Relief",
   theme: "Melt Into Stillness",
   duration: "60 minutes",
   playlist: "https://music.apple.com/us/playlist/chill-restorative/pl.1a23b4567cd890",
@@ -19,7 +19,7 @@ const restorativeClass2 = {
 };
 
 const RestorativePage2 = () => (
-  <YogaLayout title="Restorative Sequence #2 – Shoulders & Neck">
+  <YogaLayout title="Restorative Yoga for Anxiety Relief">
     <PowerYogaClass yogaClass={restorativeClass2} />
   </YogaLayout>
 );
